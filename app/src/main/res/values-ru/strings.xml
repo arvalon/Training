@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Тренировка</string>
+    <string name="avaliable_trainers">Доступные тренажёры и упражнения</string>
+    <string name="mytrainers">Тренировка</string>
+    <string name="my_programm">Моя программа</string>
+    <string name="back">Назад</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Training</string>
+    <string name="avaliable_trainers">Avaliable trainers and exercise equipment</string>
+    <string name="mytrainers">Training!</string>
+    <string name="my_programm">My Programm</string>
+    <string name="back">Back</string>
+</resources>
