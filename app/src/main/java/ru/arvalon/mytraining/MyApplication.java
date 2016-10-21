@@ -10,6 +10,7 @@ import java.util.Locale;
  */
 // FryDay commit
     //FryDay commit 2
+//FryDay commit 3
 public class MyApplication extends Application {
 
     private static  MyApplication singleton;
