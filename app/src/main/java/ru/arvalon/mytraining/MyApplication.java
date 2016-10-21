@@ -9,6 +9,7 @@ import java.util.Locale;
  * Created by arvalon on 04.05.2016.
  */
 // FryDay commit
+    //FryDay commit 2
 public class MyApplication extends Application {
 
     private static  MyApplication singleton;
