@@ -1,7 +1,52 @@
 <resources>
     <string name="app_name">Тренировка</string>
     <string name="avaliable_trainers">Доступные тренажёры и упражнения</string>
-    <string name="mytrainers">Тренировка</string>
+    <string name="workout">Тренировка!</string>
     <string name="my_programm">Моя программа</string>
     <string name="back">Назад</string>
+    <string name="equipments">Доступное спортивное оборудование</string>
+    <string name="exercises">Доступные упражнения</string>
+    <string name="dialogActivationDBTitle">Первый запуск!</string>
+    <string name="dialogActivationDBMessage">Это Ваш первый запуск приложения! Перед тем, как начать
+        заниматся, необходимо указать какой спортивный инвентарь есть в вашем распоряжении</string>
+    <string name="dialogActivationDBPositiveButton">Идём</string>
+    <string name="dialogActivationDBNegativeButton">Отмена</string>
+    <string name="addEquipments">Добавить спортивное оборудование</string>
+    <string name="addExercises">Добавить упражнения</string>
+    <string name="equipmentName">Название тренажёра</string>
+    <string name="addPhoto">Добавить фото</string>
+    <string name="counterweight_text">Тренажёр с противовесом</string>
+    <string name="no">Нет</string>
+    <string name="yes">Да</string>
+    <string name="addDescription">Добавить описание</string>
+    <string name="editDescription">Редактировать описание</string>
+    <string name="add">Добавить</string>
+    <string name="unit_of_measure">Единицы измерения</string>
+    <string name="pounds">Lbs</string>
+    <string name="kilograms">Кг</string>
+    <string name="enter_description">Введите описание</string>
+    <string name="erase">Стереть</string>
+    <string name="noname_equipment">Необходимо ввести имя тренажёра</string>
+    <string name="equipment_added">Тренажёр добавлен</string>
+    <string name="dialog_addequipmentadd">Добавить ещё тренажёр или выбрать упражнения, выполняемые с помощью данного тренажера?</string>
+    <string name="main_menu">Главное меню</string>
+    <string name="add_more_equipment">Добавить ещё тренажёр</string>
+    <string name="choose_exercises">Выбрать упражнения</string>
+    <string name="exerciseName">Имя упражнения</string>
+
+    <string name="usedEquipments">выбрать используемые тренажеры</string>
+    <string name="editListEquipments">редактировать список тренажёров</string>
+    <string name="involvedMuscles">задействованные мышцы</string>
+    <string name="editListMuscles">редактировать список мышц</string>
+    <string name="isolationExercise">изолированное упражнение</string>
+
+    <string name="loadDescription">Нагрузка на мышцу</string>
+    <string name="main">основная</string>
+    <string name="addition">дополнительная</string>
+    <string name="loadMessageHelp">Упражнение может вовлекать мышцу не на полную силу.
+    Тогда следует указать это с помощью переключателя.
+    Это улучшит автоматический подбор нагрузки на все группы мышц и её распределение
+    по разным дням тренировок в течении недели</string>
+    <string name="loadMessageHelpTitle">Информация</string>
+
 </resources>

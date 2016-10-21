@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <CheckBox
+        android:layout_margin="10dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:id="@+id/muscle.checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:id="@+id/muscle.image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_toLeftOf="@id/muscle.image"
+        android:layout_toRightOf="@id/muscle.checkbox"
+        android:id="@+id/muscle.name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/loadDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/muscle.image"
+        android:layout_alignLeft="@id/muscle.checkbox"
+        android:text="@string/loadDescription"/>
+
+    <ImageView
+        android:id="@+id/loadInfo"
+        android:layout_below="@id/muscle.image"
+        android:layout_toRightOf="@id/loadDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_help"
+        />
+
+    <Switch
+        android:id="@+id/muscleLoadSwitch"
+        android:textOff="@string/main"
+        android:textOn="@string/addition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loadInfo" />
+
+
+
+</RelativeLayout>

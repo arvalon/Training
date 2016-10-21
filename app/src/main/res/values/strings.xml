@@ -1,7 +1,52 @@
 <resources>
-    <string name="app_name">Training</string>
+    <string name="app_name">Workout</string>
     <string name="avaliable_trainers">Avaliable trainers and exercise equipment</string>
-    <string name="mytrainers">Training!</string>
+    <string name="workout">Workout!</string>
     <string name="my_programm">My Programm</string>
     <string name="back">Back</string>
+    <string name="equipments">Avaliable equipments</string>
+    <string name="exercises">Avaliable exercises</string>
+    <string name="dialogActivationDBTitle">First Run!</string>
+    <string name="dialogActivationDBMessage">Hello! This is your first use! You must add avaliable sport equipments to DB</string>
+    <string name="dialogActivationDBPositiveButton">Ok</string>
+    <string name="dialogActivationDBNegativeButton">Cancel</string>
+    <string name="addEquipments">Add equipments</string>
+    <string name="addExercises">Add exercises</string>
+    <string name="equipmentName">Equipment name</string>
+    <string name="addPhoto">Add photo</string>
+    <string name="counterweight_text">Equipment with counterweight</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="addDescription">Add description</string>
+    <string name="editDescription">Edit description</string>
+    <string name="add">Add</string>
+    <string name="unit_of_measure">Unit of measure</string>
+    <string name="pounds">Pounds</string>
+    <string name="kilograms">Kilograms</string>
+    <string name="enter_description">Enter a description</string>
+    <string name="erase">Erase</string>
+    <string name="noname_equipment">You must enter the name of the simulator</string>
+    <string name="equipment_added">Equipment added</string>
+    <string name="dialog_addequipmentadd">To add another simulator, or choose exercises performed with this simulator</string>
+    <string name="main_menu">Main menu</string>
+    <string name="add_more_equipment">Add more</string>
+    <string name="choose_exercises">Choose exercises</string>
+    <string name="exerciseName">Name of exercise</string>
+
+    <string name="usedEquipments">used exercise equipment</string>
+    <string name="editListEquipments">edit the list of available simulators</string>
+    <string name="involvedMuscles">involved muscles</string>
+    <string name="editListMuscles">edit the list of muscles</string>
+    <string name="isolationExercise">Isolated exercise</string>
+
+    <string name="loadDescription">The load on the muscle</string>
+    <string name="main">main</string>
+    <string name="addition">additional</string>
+    <string name="loadMessageHelp">Exercise can involve the muscle is not at full strength.
+        Then you should specify it with a switch. This will improve the automatic selection
+        of the load on all muscle groups and its distribution on different training
+        days during the week.</string>
+    <string name="loadMessageHelpTitle">Information</string>
+
+
 </resources>
