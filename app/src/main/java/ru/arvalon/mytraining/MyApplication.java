@@ -8,6 +8,7 @@ import java.util.Locale;
 /**
  * Created by arvalon on 04.05.2016.
  */
+// FryDay commit
 public class MyApplication extends Application {
 
     private static  MyApplication singleton;
@@ -27,5 +28,4 @@ public class MyApplication extends Application {
         Log.d("happy","Locale.getDefault().getDisplayLanguage(): "+ Locale.getDefault().getDisplayLanguage());
         Log.d("happy","Locale.getDefault().getLanguage(): "+ Locale.getDefault().getLanguage());
     }
-
 }
