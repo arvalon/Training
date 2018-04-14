@@ -1,4 +1,4 @@
-package ru.arvalon.mytraining.GymDbActivities.AvaliableExercisesActivities;
+package ru.arvalon.mytraining.gymdbactivities.avaliableexercisesactivities;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

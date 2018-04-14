@@ -1,4 +1,4 @@
-package ru.arvalon.mytraining.GymDbActivities.AddEquipmentActivities;
+package ru.arvalon.mytraining.gymdbactivities.addequipmentactivities;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -15,8 +15,8 @@ import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import ru.arvalon.mytraining.GymDbActivities.Description;
-import ru.arvalon.mytraining.GymDbActivities.AddExerciseActivities.AddExerciseActivity;
+import ru.arvalon.mytraining.gymdbactivities.Description;
+import ru.arvalon.mytraining.gymdbactivities.addexerciseactivities.AddExerciseActivity;
 import ru.arvalon.mytraining.MainActivity;
 import ru.arvalon.mytraining.R;
 import ru.arvalon.mytraining.converters.ImageConverter;

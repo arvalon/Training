@@ -1,4 +1,4 @@
-package ru.arvalon.mytraining.GymDbActivities.AddExerciseActivities;
+package ru.arvalon.mytraining.gymdbactivities.addexerciseactivities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +11,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-import ru.arvalon.mytraining.Model.Equipment;
+import ru.arvalon.mytraining.model.Equipment;
 import ru.arvalon.mytraining.R;
 import ru.arvalon.mytraining.converters.EquipmentsConverter;
 import ru.arvalon.mytraining.db.DatabaseAccess;

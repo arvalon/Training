@@ -6,7 +6,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import ru.arvalon.mytraining.Model.Equipment;
+import ru.arvalon.mytraining.model.Equipment;
 import ru.arvalon.mytraining.db.DatabaseAccess;
 
 /**

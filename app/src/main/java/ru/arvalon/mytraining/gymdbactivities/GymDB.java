@@ -1,4 +1,4 @@
-package ru.arvalon.mytraining.GymDbActivities;
+package ru.arvalon.mytraining.gymdbactivities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,13 +6,11 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-import ru.arvalon.mytraining.GymDbActivities.AddEquipmentActivities.AddEquipmentActivity;
-import ru.arvalon.mytraining.GymDbActivities.AddExerciseActivities.AddExerciseActivity;
-import ru.arvalon.mytraining.GymDbActivities.AvaliableEquipmentsActivities.EquipmentsActivity;
-import ru.arvalon.mytraining.GymDbActivities.AvaliableExercisesActivities.AvaliableExercicesActivities;
+import ru.arvalon.mytraining.gymdbactivities.addequipmentactivities.AddEquipmentActivity;
+import ru.arvalon.mytraining.gymdbactivities.addexerciseactivities.AddExerciseActivity;
+import ru.arvalon.mytraining.gymdbactivities.avaliableequipmentsactivities.EquipmentsActivity;
+import ru.arvalon.mytraining.gymdbactivities.avaliableexercisesactivities.AvaliableExercicesActivities;
 import ru.arvalon.mytraining.MainActivity;
 import ru.arvalon.mytraining.R;
 

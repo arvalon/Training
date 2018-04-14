@@ -13,10 +13,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import ru.arvalon.mytraining.Model.Equipment;
-import ru.arvalon.mytraining.Model.Muscle;
-import ru.arvalon.mytraining.Model.MuscleGroup;
-import ru.arvalon.mytraining.R;
+import ru.arvalon.mytraining.model.Equipment;
+import ru.arvalon.mytraining.model.Muscle;
+import ru.arvalon.mytraining.model.MuscleGroup;
 
 /**
  * Created by arvalon on 07.06.2016.

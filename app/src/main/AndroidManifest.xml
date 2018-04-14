@@ -20,20 +20,20 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".GymDbActivities.GymDB" />
-        <activity android:name=".WorkoutActivities.WorkoutActivity" />
-        <activity android:name=".MyProgrammActivities.MyProgrammActivity" />
-        <activity android:name=".GymDbActivities.AvaliableExercisesActivities.AvaliableExercicesActivities" />
+        <activity android:name=".gymdbactivities.GymDB" />
+        <activity android:name=".workoutactivities.WorkoutActivity" />
+        <activity android:name=".myprogrammactivities.MyProgrammActivity" />
+        <activity android:name=".gymdbactivities.avaliableexercisesactivities.AvaliableExercicesActivities" />
 
         <activity
-            android:name=".GymDbActivities.AvaliableEquipmentsActivities.EquipmentsActivity"
+            android:name=".gymdbactivities.avaliableequipmentsactivities.EquipmentsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 
-        <activity android:name=".GymDbActivities.AddEquipmentActivities.AddEquipmentActivity" />
-        <activity android:name=".GymDbActivities.Description" />
-        <activity android:name=".GymDbActivities.AddExerciseActivities.AddExerciseActivity" />
-        <activity android:name=".GymDbActivities.AddExerciseActivities.GetEquipments2Exercise" />
-        <activity android:name=".GymDbActivities.AddExerciseActivities.GetMuscles2Exercise"/>
+        <activity android:name=".gymdbactivities.addequipmentactivities.AddEquipmentActivity" />
+        <activity android:name=".gymdbactivities.Description" />
+        <activity android:name=".gymdbactivities.addexerciseactivities.AddExerciseActivity" />
+        <activity android:name=".gymdbactivities.addexerciseactivities.GetEquipments2Exercise" />
+        <activity android:name=".gymdbactivities.addexerciseactivities.GetMuscles2Exercise"/>
     </application>
 
 </manifest>

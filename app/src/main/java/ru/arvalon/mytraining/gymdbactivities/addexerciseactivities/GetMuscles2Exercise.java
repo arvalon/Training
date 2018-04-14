@@ -1,16 +1,14 @@
-package ru.arvalon.mytraining.GymDbActivities.AddExerciseActivities;
+package ru.arvalon.mytraining.gymdbactivities.addexerciseactivities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ExpandableListView;
 
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 
-import ru.arvalon.mytraining.Model.Muscle;
-import ru.arvalon.mytraining.Model.MuscleGroup;
+import ru.arvalon.mytraining.model.Muscle;
+import ru.arvalon.mytraining.model.MuscleGroup;
 import ru.arvalon.mytraining.R;
 import ru.arvalon.mytraining.db.DatabaseAccess;
 

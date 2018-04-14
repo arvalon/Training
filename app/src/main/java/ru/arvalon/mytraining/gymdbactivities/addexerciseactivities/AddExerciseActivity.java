@@ -1,4 +1,4 @@
-package ru.arvalon.mytraining.GymDbActivities.AddExerciseActivities;
+package ru.arvalon.mytraining.gymdbactivities.addexerciseactivities;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -12,7 +12,7 @@ import android.widget.ImageView;
 
 import java.util.ArrayList;
 
-import ru.arvalon.mytraining.GymDbActivities.Description;
+import ru.arvalon.mytraining.gymdbactivities.Description;
 import ru.arvalon.mytraining.R;
 
 public class AddExerciseActivity extends AppCompatActivity {

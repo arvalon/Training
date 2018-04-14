@@ -1,8 +1,7 @@
-package ru.arvalon.mytraining.GymDbActivities.AddExerciseActivities;
+package ru.arvalon.mytraining.gymdbactivities.addexerciseactivities;
 
 import android.content.Context;
 import android.graphics.BitmapFactory;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,13 +10,12 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-import ru.arvalon.mytraining.Model.Equipment;
+import ru.arvalon.mytraining.model.Equipment;
 import ru.arvalon.mytraining.R;
 
 /**

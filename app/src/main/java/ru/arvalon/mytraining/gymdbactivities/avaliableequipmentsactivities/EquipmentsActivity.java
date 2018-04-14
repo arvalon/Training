@@ -1,4 +1,4 @@
-package ru.arvalon.mytraining.GymDbActivities.AvaliableEquipmentsActivities;
+package ru.arvalon.mytraining.gymdbactivities.avaliableequipmentsactivities;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -12,7 +12,7 @@ import android.support.v7.widget.Toolbar;
 import java.util.ArrayList;
 import java.util.List;
 
-import ru.arvalon.mytraining.Model.Equipment;
+import ru.arvalon.mytraining.model.Equipment;
 import ru.arvalon.mytraining.R;
 import ru.arvalon.mytraining.db.DatabaseAccess;
 

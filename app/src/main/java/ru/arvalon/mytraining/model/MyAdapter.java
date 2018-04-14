@@ -1,4 +1,4 @@
-package ru.arvalon.mytraining.Model;
+package ru.arvalon.mytraining.model;
 
 import android.content.Context;
 import android.view.View;

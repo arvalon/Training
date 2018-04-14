@@ -1,4 +1,4 @@
-package ru.arvalon.mytraining.Model;
+package ru.arvalon.mytraining.model;
 
 /**
  * Created by arvalon on 15.07.2016.

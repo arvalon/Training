@@ -1,14 +1,11 @@
-package ru.arvalon.mytraining.MyProgrammActivities;
+package ru.arvalon.mytraining.myprogrammactivities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.TextView;
 
 import ru.arvalon.mytraining.MainActivity;
 import ru.arvalon.mytraining.R;

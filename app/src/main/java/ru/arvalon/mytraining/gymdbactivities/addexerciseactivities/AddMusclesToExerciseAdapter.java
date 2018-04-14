@@ -1,10 +1,8 @@
-package ru.arvalon.mytraining.GymDbActivities.AddExerciseActivities;
+package ru.arvalon.mytraining.gymdbactivities.addexerciseactivities;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.graphics.BitmapFactory;
 import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,8 +18,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import ru.arvalon.mytraining.Model.Muscle;
-import ru.arvalon.mytraining.Model.MuscleGroup;
+import ru.arvalon.mytraining.model.Muscle;
+import ru.arvalon.mytraining.model.MuscleGroup;
 import ru.arvalon.mytraining.R;
 import ru.arvalon.mytraining.dialogs.DialogShowLoadDescription;
 

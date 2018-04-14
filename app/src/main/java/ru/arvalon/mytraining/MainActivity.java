@@ -5,10 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-import ru.arvalon.mytraining.GymDbActivities.AvaliableEquipmentsActivities.EquipmentsActivity;
-import ru.arvalon.mytraining.GymDbActivities.GymDB;
-import ru.arvalon.mytraining.MyProgrammActivities.MyProgrammActivity;
-import ru.arvalon.mytraining.WorkoutActivities.WorkoutActivity;
+import ru.arvalon.mytraining.gymdbactivities.avaliableequipmentsactivities.EquipmentsActivity;
+import ru.arvalon.mytraining.gymdbactivities.GymDB;
+import ru.arvalon.mytraining.myprogrammactivities.MyProgrammActivity;
+import ru.arvalon.mytraining.workoutactivities.WorkoutActivity;
 import ru.arvalon.mytraining.db.DatabaseAccess;
 import ru.arvalon.mytraining.dialogs.DialogActivationDB;
 
