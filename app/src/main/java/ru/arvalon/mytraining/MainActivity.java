@@ -27,14 +27,12 @@ public class MainActivity extends AppCompatActivity implements DialogActivationD
 
     private void startMyProgrammActivity() {
         Log.d(App.TAG,"Button MyProgrammActivity is pressed");
-        Intent myprogrammintent=new Intent(this,MyProgrammActivity.class);
-        startActivity(myprogrammintent);
+        startActivity(new Intent(this,MyProgrammActivity.class));
     }
 
     private void workout() {
         Log.d(App.TAG,"Button WorkoutActivity is pressed");
-        Intent workoutintent=new Intent(this,WorkoutActivity.class);
-        startActivity(workoutintent);
+        startActivity(new Intent(this,WorkoutActivity.class));
     }
 
     public void startMyTrainersActivity(){
@@ -50,13 +48,11 @@ public class MainActivity extends AppCompatActivity implements DialogActivationD
 
     @Override
     public void DialogActivationDBpositive() {
-        Intent equipmentsintent=new Intent(this,EquipmentsActivity.class);
-        startActivity(equipmentsintent);
+        startActivity(new Intent(this,EquipmentsActivity.class));
     }
 
     @Override
     public void DialogActivationDBnegative() {
-        Intent equipmentsintent=new Intent(this,GymDB.class);
-        startActivity(equipmentsintent);
+        startActivity(new Intent(this,GymDB.class));
     }
 }

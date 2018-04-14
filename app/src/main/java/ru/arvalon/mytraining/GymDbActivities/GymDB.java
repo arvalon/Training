@@ -36,33 +36,13 @@ public class GymDB extends AppCompatActivity {
         addequipment=(Button)findViewById(R.id.addEquipments);
         addExercise=(Button)findViewById(R.id.addExercises);
 
-        equipments.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startEquipmentsActivity();
-            }
-        });
+        equipments.setOnClickListener(v -> startEquipmentsActivity());
 
-        exercises.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startExercicesActivity();
-            }
-        });
+        exercises.setOnClickListener(v -> startExercicesActivity());
 
-        addequipment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startAddEquipmentActivity();
-            }
-        });
+        addequipment.setOnClickListener(v -> startAddEquipmentActivity());
 
-        addExercise.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startAddExerciseActivity();
-            }
-        });
+        addExercise.setOnClickListener(v -> startAddExerciseActivity());
 
 
 

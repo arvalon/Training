@@ -28,13 +28,13 @@ public class EquipmentsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_equipments);
 
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(R.string.equipments);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
 
 
-        viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager = findViewById(R.id.viewpager);
         setupViewPager(viewPager);
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
@@ -50,7 +50,15 @@ public class EquipmentsActivity extends AppCompatActivity {
         databaseAccess.open();
         List<Equipment> equipments=databaseAccess.getFullEquipmentForFragment();
         for (Equipment equipment:equipments){
-            adapter.addFragment(EquipmentFragment.getInstance(viewPager,equipment.getId(),equipment.getName(),equipment.getImage(),equipment.getAvaliable(),equipment.getMeasure()), String.valueOf(equipment.getId()));
+            adapter.addFragment(
+                    EquipmentFragment.getInstance(
+                            viewPager,
+                            equipment.getId(),
+                            equipment.getName(),
+                            equipment.getImage(),
+                            equipment.getAvaliable(),
+                            equipment.getMeasure()),
+                    String.valueOf(equipment.getId()));
         }
         databaseAccess.setActivationDB();
         databaseAccess.close();
