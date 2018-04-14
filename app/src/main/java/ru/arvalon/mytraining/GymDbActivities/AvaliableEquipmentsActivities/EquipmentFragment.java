@@ -9,12 +9,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import ru.arvalon.mytraining.App;
 import ru.arvalon.mytraining.R;
 import ru.arvalon.mytraining.db.DatabaseAccess;
 
@@ -36,10 +36,14 @@ public class EquipmentFragment extends Fragment {
     private int measure;
 
     private static ViewPager viewPager;
-    private Button buttonNext;
-    private Button buttonPrev;
 
-    public static Fragment getInstance(ViewPager viewPager,int id,String name, byte[] image, int avaliable,int measure)
+    public static Fragment getInstance(
+            ViewPager viewPager,
+            int id,
+            String name,
+            byte[] image,
+            int avaliable,
+            int measure)
     {
         Fragment fragment = new EquipmentFragment();
         EquipmentFragment.viewPager=viewPager;
@@ -69,82 +73,70 @@ public class EquipmentFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater,
+                             @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
+
         View view = inflater.inflate(R.layout.fragment_equipments, container, false);
 
-        TextView tv = (TextView) view.findViewById(R.id.equipment_name);
+        TextView tv = view.findViewById(R.id.equipment_name);
         tv.setText(name);
 
-        ImageView image = (ImageView) view.findViewById(R.id.equipment_image);
+        ImageView image =view.findViewById(R.id.equipment_image);
 
         if (this.image!=null){
-            image.setImageBitmap(BitmapFactory.decodeByteArray(this.image,0,this.image.length));
+            image.setImageBitmap(BitmapFactory
+                    .decodeByteArray(this.image,0,this.image.length));
         }else {
             image.setImageResource(R.drawable.no);
         }
 
-        Switch sw=(Switch)view.findViewById(R.id.equipment_switch);
+        Switch sw=view.findViewById(R.id.equipment_switch);
         if (avaliable==1) sw.setChecked(true);
 
-        sw.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked){
-                    DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getContext());
-                    databaseAccess.open();
-                    databaseAccess.ChangeEqupmentsAvaliable(id,1);
-                    databaseAccess.close();
-                    //viewPager.setCurrentItem(viewPager.getCurrentItem()+1);
-                }
-                else {
-                    DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getContext());
-                    databaseAccess.open();
-                    databaseAccess.ChangeEqupmentsAvaliable(id,0);
-                    databaseAccess.close();
-                }
+        sw.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if(isChecked){
+                DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getContext());
+                databaseAccess.open();
+                databaseAccess.ChangeEqupmentsAvaliable(id,1);
+                databaseAccess.close();
+                //viewPager.setCurrentItem(viewPager.getCurrentItem()+1);
+            }
+            else {
+                DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getContext());
+                databaseAccess.open();
+                databaseAccess.ChangeEqupmentsAvaliable(id,0);
+                databaseAccess.close();
             }
         });
-        Switch swMeasure=(Switch)view.findViewById(R.id.unit_of_measure_switch);
+        Switch swMeasure=view.findViewById(R.id.unit_of_measure_switch);
         if(measure==0){
             swMeasure.setChecked(false);
         }else if(measure==1){
             swMeasure.setChecked(true);
         }
-        swMeasure.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked){
-                    DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getContext());
-                    databaseAccess.open();
-                    databaseAccess.ChangeEqupmentsMeasure(id,1);
-                    databaseAccess.close();
-                }else {
-                    DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getContext());
-                    databaseAccess.open();
-                    databaseAccess.ChangeEqupmentsMeasure(id,0);
-                    databaseAccess.close();
-                }
+        swMeasure.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked){
+                DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getContext());
+                databaseAccess.open();
+                databaseAccess.ChangeEqupmentsMeasure(id,1);
+                databaseAccess.close();
+            }else {
+                DatabaseAccess databaseAccess=DatabaseAccess.getInstance(getContext());
+                databaseAccess.open();
+                databaseAccess.ChangeEqupmentsMeasure(id,0);
+                databaseAccess.close();
             }
         });
 
-        buttonNext=(Button)view.findViewById(R.id.equipment_next);
-        buttonNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // TODO: 17.06.2016
-                Log.d("happy","NEXT");
-                viewPager.setCurrentItem(viewPager.getCurrentItem()+1);
-            }
+        view.findViewById(R.id.equipment_next).setOnClickListener(v->{
+            Log.d(App.TAG,"NEXT");
+            viewPager.setCurrentItem(viewPager.getCurrentItem()+1);
         });
 
-        buttonNext=(Button)view.findViewById(R.id.equipment_back);
-        buttonNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // TODO: 17.06.2016
-                Log.d("happy","PREV");
-                viewPager.setCurrentItem(viewPager.getCurrentItem()-1);
-            }
+        view.findViewById(R.id.equipment_back).setOnClickListener(v->{
+            Log.d(App.TAG,"PREV");
+            viewPager.setCurrentItem(viewPager.getCurrentItem()-1);
         });
 
         return view;

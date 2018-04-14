@@ -21,30 +21,15 @@ import ru.arvalon.mytraining.R;
  */
 public class GymDB extends AppCompatActivity {
 
-    private Button equipments;
-    private Button exercises;
-    private Button addequipment;
-    private Button addExercise;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gymdb);
 
-        equipments=(Button)findViewById(R.id.equipments);
-        exercises=(Button)findViewById(R.id.exercices);
-        addequipment=(Button)findViewById(R.id.addEquipments);
-        addExercise=(Button)findViewById(R.id.addExercises);
-
-        equipments.setOnClickListener(v -> startEquipmentsActivity());
-
-        exercises.setOnClickListener(v -> startExercicesActivity());
-
-        addequipment.setOnClickListener(v -> startAddEquipmentActivity());
-
-        addExercise.setOnClickListener(v -> startAddExerciseActivity());
-
-
+        findViewById(R.id.equipments).setOnClickListener(v -> startEquipmentsActivity());
+        findViewById(R.id.exercices).setOnClickListener(v -> startExercicesActivity());
+        findViewById(R.id.addEquipments).setOnClickListener(v -> startAddEquipmentActivity());
+        findViewById(R.id.addExercises).setOnClickListener(v -> startAddExerciseActivity());
 
     }
 
@@ -52,35 +37,29 @@ public class GymDB extends AppCompatActivity {
         startActivity(new Intent(this,AddExerciseActivity.class));
     }
 
-    private void startAddEquipmentActivity() { startActivity(new Intent(this,AddEquipmentActivity.class));
+    private void startAddEquipmentActivity() {
+        startActivity(new Intent(this,AddEquipmentActivity.class));
     }
 
     private void startEquipmentsActivity() {
-        Intent i=new Intent(this,EquipmentsActivity.class);
-        startActivity(i);
-
+        startActivity(new Intent(this,EquipmentsActivity.class));
     }
 
     private void startExercicesActivity() {
         startActivity(new Intent(this,AvaliableExercicesActivities.class));
     }
 
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.equipment_menu,menu);
-
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId()==R.id.back){
-            Intent mainActivity=new Intent(this,MainActivity.class);
-            startActivity(mainActivity);
+            startActivity(new Intent(this,MainActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }
-
 }
