@@ -6,31 +6,34 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".MyApplication"
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/app_ico"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".GymDbActivities.GymDB" />
         <activity android:name=".WorkoutActivities.WorkoutActivity" />
         <activity android:name=".MyProgrammActivities.MyProgrammActivity" />
         <activity android:name=".GymDbActivities.AvaliableExercisesActivities.AvaliableExercicesActivities" />
+
         <activity
             android:name=".GymDbActivities.AvaliableEquipmentsActivities.EquipmentsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".GymDbActivities.AddEquipmentActivities.AddEquipmentActivity" />
         <activity android:name=".GymDbActivities.Description" />
         <activity android:name=".GymDbActivities.AddExerciseActivities.AddExerciseActivity" />
         <activity android:name=".GymDbActivities.AddExerciseActivities.GetEquipments2Exercise" />
-        <activity android:name=".GymDbActivities.AddExerciseActivities.GetMuscles2Exercise"></activity>
+        <activity android:name=".GymDbActivities.AddExerciseActivities.GetMuscles2Exercise"/>
     </application>
 
 </manifest>
