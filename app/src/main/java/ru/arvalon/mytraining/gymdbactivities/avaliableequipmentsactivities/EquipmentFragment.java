@@ -13,9 +13,10 @@ import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import ru.arvalon.mytraining.App;
 import ru.arvalon.mytraining.R;
 import ru.arvalon.mytraining.db.DatabaseAccess;
+
+import static ru.arvalon.mytraining.MainActivity.TAG;
 
 /**
  * Created by arvalon on 16.06.2016.
@@ -129,12 +130,12 @@ public class EquipmentFragment extends Fragment {
         });
 
         view.findViewById(R.id.equipment_next).setOnClickListener(v->{
-            Log.d(App.TAG,"NEXT");
+            Log.d(TAG,"NEXT");
             viewPager.setCurrentItem(viewPager.getCurrentItem()+1);
         });
 
         view.findViewById(R.id.equipment_back).setOnClickListener(v->{
-            Log.d(App.TAG,"PREV");
+            Log.d(TAG,"PREV");
             viewPager.setCurrentItem(viewPager.getCurrentItem()-1);
         });
 

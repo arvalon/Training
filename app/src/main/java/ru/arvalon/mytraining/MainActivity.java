@@ -14,6 +14,8 @@ import ru.arvalon.mytraining.dialogs.DialogActivationDB;
 
 public class MainActivity extends AppCompatActivity implements DialogActivationDB.DialogHost {
 
+    public static final String TAG = "gymlog";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,12 +28,12 @@ public class MainActivity extends AppCompatActivity implements DialogActivationD
 
 
     private void startMyProgrammActivity() {
-        Log.d(App.TAG,"Button MyProgrammActivity is pressed");
+        Log.d(TAG,"Button MyProgrammActivity is pressed");
         startActivity(new Intent(this,MyProgrammActivity.class));
     }
 
     private void workout() {
-        Log.d(App.TAG,"Button WorkoutActivity is pressed");
+        Log.d(TAG,"Button WorkoutActivity is pressed");
         startActivity(new Intent(this,WorkoutActivity.class));
     }
 
