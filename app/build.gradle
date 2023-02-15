@@ -1,15 +1,17 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "ru.arvalon.mytraining"
-        minSdkVersion 16
-        targetSdkVersion 27
-        versionCode 4
-        versionName "0.3.0.1"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 5
+        versionName "0.4"
     }
     buildTypes {
         release {
@@ -25,11 +27,16 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.2'
 
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support:design:27.1.1'
+    // Google components
+
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
+
     implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
     implementation 'com.squareup.picasso:picasso:2.5.2'
-
 }

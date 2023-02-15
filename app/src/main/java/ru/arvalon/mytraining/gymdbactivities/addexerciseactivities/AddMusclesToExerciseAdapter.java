@@ -2,7 +2,7 @@ package ru.arvalon.mytraining.gymdbactivities.addexerciseactivities;
 
 import android.content.Context;
 import android.graphics.BitmapFactory;
-import android.support.v4.app.FragmentManager;
+import androidx.fragment.app.FragmentManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
