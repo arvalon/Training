@@ -10,8 +10,8 @@ android {
         applicationId "ru.arvalon.mytraining"
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 5
-        versionName "0.4"
+        versionCode 6
+        versionName "0.5"
     }
     buildTypes {
         release {
@@ -20,17 +20,15 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
+    namespace 'ru.arvalon.mytraining'
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     testImplementation 'junit:junit:4.13.2'
-
-    // Google components
-
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
